@@ -1,0 +1,21 @@
+@use "variables";
+.footer {
+  .footer__container {
+    display: none;
+    background: variables.$poke-blue;
+    padding: 1rem;
+    .footer__ul {
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      list-style: none;
+      gap: 3rem;
+      .footer__li {
+        .footer__links {
+          text-decoration: none;
+          color: variables.$poke-white;
+        }
+      }
+    }
+  }
+}

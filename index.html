@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Use a Real Time Pokedex to find all about your favourite Pokemons">
+  <meta name="keywords" content="pokemon,pokedex,pikachu,charmander,bulbasaur,squirtle,pokeball">
+  <link rel="shortcut icon" href="./assets/img/pokeball.png" type="image/x-icon">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>PokeAppRT</title>
+</head>
+
+<body>
+  <header class="header">
+    <!--*HEADER CONTAINER-->
+    <div class="header__container">
+      <div class="header__container__logo__title">
+        <a class="header__container__logo__link" href="./index.html"><img class="header__container__logo"
+            src="./assets/img/pokeAppRT-logo-mobile.png" alt="PokeAppRT-Logo"></a>
+      </div>
+
+      <!--*HEADER LIST-->
+      <div class="header__container__links">
+        <ul class="header__container__ul">
+          <li class="header__container__list"><a href="./pages/how-to.html" class="header__container__links">How to Use
+              It</a></li>
+          <li class="header__container__list"><a href="./pages/contact-us.html" class="header__container__links">Contact
+              Us</a></li>
+        </ul>
+      </div>
+
+      <!--*HEADER MENU-->
+      <div class="header__container__menu">
+        <img src="./assets/img/menu-icon-mobile.png" alt="PokeAppRT-Menu" id="menuIcon"
+          class="header__container__menu__icon">
+      </div>
+    </div>
+  </header>
+
+  <!--*MAIN CONTAINER-->
+  <main class="main">
+    <article class="main__article">
+      <div class="main__article__container">
+
+        <div id="pokemons" class="main__article__container__pokemons">
+
+          <div class="main__article__container__btns">
+          </div>
+        </div>
+        <div id="modalContainer" class="disable"></div>
+      </div>
+
+      <div class="main__article__container__poke-types">
+        <div class="container__poke-types__info">
+          <h3 class="container__poke-types__info__title">All Gens Pokemon Types</h3>
+        </div>
+        <div id="containerTypes" class="container__poke-types__img">
+
+          <img id="typeFire" name="type" src="./assets/img/tipo-fuego.png" alt="type fire" class="poke-fire">
+          <img id="typeElectric" name="type" src="./assets/img/tipo-electrico.png" alt="type electric"
+            class="poke-electric">
+          <img id="typeGrass" name="type" src="./assets/img/tipo-planta.png" alt="type grass" class="poke-grass">
+          <img id="typeWater" name="type" src="./assets/img/tipo-agua.png" alt="type water" class="poke-water">
+          <img id="typePsiquic" name="type" src="./assets/img/tipo-pisquico.png" alt="type pisquic"
+            class="poke-psiquic">
+          <img id="typeFight" name="type" src="./assets/img/tipo-pelea.png" alt="type fight" class="poke-fight">
+          <img id="typeRock" name="type" src="./assets/img/tipo-roca.png" alt="type rock" class="poke-rock">
+          <img id="typeNormal" name="type" src="./assets/img/tipo-normal.png" alt="type normal" class="poke-normal">
+          <img id="typeFlying" name="type" src="./assets/img/tipo-flying.png" alt="type flaying" class="poke-flying">
+          <img id="typePoison" name="type" src="./assets/img/tipo-poison.png" alt="type poison" class="poke-poison">
+          <img id="typeGround" name="type" src="./assets/img/tipo-ground.png" alt="type ground" class="poke-ground">
+          <img id="typeBug" name="type" src="./assets/img/tipo-bug.png" alt="type bug" class="poke-bug">
+          <img id="typeGhost" name="type" src="./assets/img/tipo-ghost.png" alt="type ghost" class="poke-ghost">
+          <img id="typeSteel" name="type" src="./assets/img/tipo-steel.png" alt="type steel" class="poke-steel">
+          <img id="typeIce" name="type" src="./assets/img/tipo-ice.png" alt="type ice" class="poke-ice">
+          <img id="typeDragon" name="type" src="./assets/img/tipo-dragon.png" alt="type dragon" class="poke-dragon">
+          <img id="typeDark" name="type" src="./assets/img/tipo-dark.png" alt="type dark" class="poke-dark">
+          <img id="typeFairy" name="type" src="./assets/img/tipo-fairy.png" alt="type fairy" class="poke-fairy">
+
+          <div id="containerPokeTypes" class="container__poke__type"></div>
+        </div>
+
+
+      </div>
+
+    </article>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <ul class="footer__ul">
+          <li class="footer__li"><a href="" class="footer__links">How to use</a></li>
+          <li class="footer__li"><a href="" class="footer__links">Contact Us</a></li>
+        </ul>
+      </div>
+    </footer>
+  </main>
+
+</body>
+<script src="./js/app.js"></script>
+
+</html>
