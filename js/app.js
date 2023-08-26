@@ -105,7 +105,7 @@ const pintarPokemon = (pokemon) => {
   pokeDescription.className = "poke__description";
   pokeDescription.innerHTML = `
   <h4 class="abilities">Ability: ${pokemon.abilities[0].ability.name}</h4>
-  <h4 class= "moves">Moves: ${pokemon.moves[0].move.name}, ${pokemon.moves[1].move.name}, ${pokemon.moves[2].move.name}, ${pokemon.moves[3].move.name} </h4>
+  <h4 class= "moves">Moves: ${pokemon.moves[0].move.name}, ${pokemon.moves[1].move.name}, <br>${pokemon.moves[2].move.name}, ${pokemon.moves[3].move.name} </h4>
   <h4 class="stats">Base Stat: ${pokemon.stats[0].base_stat}, Attack: ${pokemon.stats[1].base_stat}
   <br> Defense: ${pokemon.stats[2].base_stat} </h4>
   `;
