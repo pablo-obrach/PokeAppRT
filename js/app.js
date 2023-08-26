@@ -1,4 +1,4 @@
-//TODO: add all gens types into the filter and in the HTML
+//TODO: add all gens types into the filter and in the HTML ✅
 
 const pokemons = document.getElementById("pokemons");
 const pokeBtnPrev = document.getElementById("btn-prev");
@@ -9,7 +9,7 @@ const containerTypes = document.getElementById("containerTypes");
 const containerPokeTypes = document.getElementById("containerPokeTypes");
 const pokeTypesName = document.getElementsByName("type");
 let page = 1;
-let pokeTypeDefault = "fire";
+let pokeTypeDefault = "";
 
 document.addEventListener("DOMContentLoaded", () => {
   fetchData();
@@ -133,8 +133,8 @@ const pintarModal = () => {
   const modalContent = document.createElement("div");
   modalContent.className = "modal__content";
   modalContent.innerHTML = `
-  <a class= "modal__link">How to Use</a>
-  <a class= "modal__link">Contact Us</a>`;
+  <a href="pages/how-to-use.html" class= "modal__link">How to Use</a>
+  <a href="pages/leave-a-comment.html" class= "modal__link">Contact Us</a>`;
 
   modalContainer.append(modalContent);
 };
@@ -145,79 +145,10 @@ menuIcon.addEventListener("click", () => {
 
 containerTypes.addEventListener("click", (e) => {
   if (e.target.matches("img")) {
-    switch (e.target) {
-      case typeFire:
-        pokeTypeDefault = "fire";
-        fetchDataTypes();
-        break;
-      case typeElectric:
-        pokeTypeDefault = "electric";
-        fetchDataTypes();
-        break;
-      case typeGrass:
-        pokeTypeDefault = "grass";
-        fetchDataTypes();
-        break;
-      case typeWater:
-        pokeTypeDefault = "water";
-        fetchDataTypes();
-        break;
-      case typePsiquic:
-        pokeTypeDefault = "psychic";
-        fetchDataTypes();
-        break;
-      case typeFight:
-        pokeTypeDefault = "fighting";
-        fetchDataTypes();
-        break;
-      case typeRock:
-        pokeTypeDefault = "rock";
-        fetchDataTypes();
-        break;
-      case typeNormal:
-        pokeTypeDefault = "normal";
-        fetchDataTypes();
-        break;
-      case typeFlying:
-        pokeTypeDefault = "flying";
-        fetchDataTypes();
-        break;
-      case typePoison:
-        pokeTypeDefault = "poison";
-        fetchDataTypes();
-        break;
-      case typeGround:
-        pokeTypeDefault = "ground";
-        fetchDataTypes();
-        break;
-      case typeBug:
-        pokeTypeDefault = "bug";
-        fetchDataTypes();
-        break;
-      case typeGhost:
-        pokeTypeDefault = "ghost";
-        fetchDataTypes();
-        break;
-      case typeSteel:
-        pokeTypeDefault = "steel";
-        fetchDataTypes();
-        break;
-      case typeIce:
-        pokeTypeDefault = "ice";
-        fetchDataTypes();
-        break;
-      case typeDragon:
-        pokeTypeDefault = "dragon";
-        fetchDataTypes();
-        break;
-      case typeDark:
-        pokeTypeDefault = "dark";
-        fetchDataTypes();
-        break;
-      case typeFairy:
-        pokeTypeDefault = "fairy";
-        fetchDataTypes();
-        break;
+    let newPokeType = e.target.id.replace("type", "").toLowerCase();
+    if (newPokeType !== pokeTypeDefault) {
+      pokeTypeDefault = newPokeType;
+      fetchDataTypes();
     }
   }
 });

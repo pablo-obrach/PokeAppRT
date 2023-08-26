@@ -10,23 +10,20 @@
   gap: 1rem;
   padding: 0.5rem;
 }
+.header .header__container .header__container__logo__title .header__container__logo__link .header__container__logo {
+  transition: all 600ms ease-in-out;
+}
+.header .header__container .header__container__logo__title .header__container__logo__link .header__container__logo:hover {
+  transform: scale(110%);
+}
 .header .header__container .header__container__links {
   display: none;
 }
 @media (min-width: 1320px) {
   .header .header__container .header__container__links {
     display: flex;
+    color: hsl(0, 0%, 100%);
   }
-}
-.header .header__container .header__container__links .header__container__ul {
-  display: flex;
-  gap: 2rem;
-  list-style: none;
-}
-.header .header__container .header__container__links .header__container__ul .header__container__list a {
-  font-size: 1.2em;
-  text-decoration: none;
-  color: hsl(0, 0%, 100%);
 }
 
 body {
@@ -180,17 +177,20 @@ body .main .main__article .main__article__container .disable {
 body .main .main__article .main__article__container .enable {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 20%;
   background: hsl(221, 61%, 27%);
   padding: 1rem;
   border-radius: 10px 0px 0px 10px;
   box-shadow: 0px 0px 5px 100vmax rgba(0, 0, 0, 0.5);
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 40%;
+  right: 40%;
 }
 body .main .main__article .main__article__container .enable .modal__header {
   align-self: end;
+}
+body .main .main__article .main__article__container .enable .modal__header .modal__close {
+  cursor: pointer;
 }
 body .main .main__article .main__article__container .enable .modal__content {
   display: flex;
@@ -199,6 +199,9 @@ body .main .main__article .main__article__container .enable .modal__content {
 }
 body .main .main__article .main__article__container .enable .modal__content .modal__link {
   color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
 }
 body .main .main__article .main__article__container .enable .modal__content .modal__link:hover {
   color: hsl(51, 100%, 50%);
@@ -262,6 +265,14 @@ body .main .main__article .container__poke-types__img .container__poke__type .ty
   background-position: center;
   background-size: cover;
   margin-right: 0.5rem;
+}
+body .main .main__article .container__poke-types__img > img {
+  cursor: pointer;
+  transition: all 400ms ease-in-out;
+}
+body .main .main__article .container__poke-types__img > img:hover {
+  filter: brightness(1.2);
+  transform: scale(110%);
 }
 body .main .main__article .disable {
   display: none;

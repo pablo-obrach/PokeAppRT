@@ -149,17 +149,21 @@ body {
         .enable {
           display: flex;
           flex-direction: column;
-          width: 50%;
+          width: 20%;
           background: variables.$poke-dark-blue;
           padding: 1rem;
           border-radius: 10px 0px 0px 10px;
           box-shadow: 0px 0px 5px 100vmax rgba($color: #000000, $alpha: 0.5);
           position: absolute;
-          top: 0;
-          right: 0;
+          top: 40%;
+          right: 40%;
 
           .modal__header {
             align-self: end;
+
+            .modal__close {
+              cursor: pointer;
+            }
           }
           .modal__content {
             display: flex;
@@ -168,6 +172,9 @@ body {
 
             .modal__link {
               color: variables.$poke-white;
+              cursor: pointer;
+              text-decoration: none;
+              font-size: 2rem;
 
               &:hover {
                 color: variables.$poke-yellow;
@@ -244,6 +251,17 @@ body {
           }
         }
       }
+
+      .container__poke-types__img > img {
+        cursor: pointer;
+        transition: all 400ms ease-in-out;
+
+        &:hover {
+          filter: brightness(1.2);
+          transform: scale(110%);
+        }
+      }
+
       .disable {
         display: none;
       }
