@@ -38,6 +38,14 @@ const fetchDataTypes = async () => {
 };
 
 const pintarPokemon = (pokemon) => {
+  const pokedexContainer = document.createElement("div");
+  pokedexContainer.className = "container-pokedex";
+  pokemons.append(pokedexContainer);
+
+  const pokedexImage = document.createElement("img");
+  pokedexImage.setAttribute("src", "./assets/img/pokedex.png");
+  pokedexContainer.append(pokedexImage);
+
   const pokeImgContainer = document.createElement("div");
   pokeImgContainer.className = "main__article__container__pokeImage";
   pokemons.append(pokeImgContainer);
